@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood5",
+  "version": "1.0.0",
+  "description": "omfp3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch style.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aurelryo/OCR-Ohmyfood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aurelryo/OCR-Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/Aurelryo/OCR-Ohmyfood#readme",
+  "dependencies": {
+    "sass": "^1.48.0"
+  }
+}

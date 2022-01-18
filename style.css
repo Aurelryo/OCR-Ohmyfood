@@ -1,14 +1,114 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2? family= Raleway &famille= Roboto & display=swap");
-
 body {
   margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  padding: 0 1rem;
 }
 
 header {
   font-family: "Shrikhand", cursif;
   text-align: center;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
   padding: 0.3rem;
   position: relative;
 }
+
+header h1 {
+  margin: 0;
+}
+
+.location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #e5e7e9;
+  text-align: center;
+  gap: 1rem;
+}
+
+.location h2 {
+  padding: 0.5rem;
+}
+
+.explo {
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.explo h2 {
+  margin-top: 0;
+}
+
+.explo button {
+  border-radius: 30px;
+  border: none;
+  -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background-image: linear-gradient(#ff79da, #9356dc);
+  margin-bottom: 10px;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+.explo button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  opacity: 0.8;
+}
+
+.fonction ol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 992px) {
+  .fonction ol {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.fonction li {
+  background-color: #F6F6F6;
+  list-style-type: none;
+  padding: 1rem 2rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 5px 5px grey;
+          box-shadow: 0px 5px 5px grey;
+}
+
+.fonction li:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.fonction li i.fas {
+  margin-right: 10px;
+}
+
+span {
+  border: 1px black;
+}
+/*# sourceMappingURL=style.css.map */
