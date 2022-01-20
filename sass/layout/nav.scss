@@ -25,6 +25,7 @@ nav{
         color: rgb(0, 243, 170);
         width: 65px;
         padding: 1%;
+        margin: 0;
         @include shadow;
     }
     & h3{
