@@ -140,6 +140,7 @@ nav {
   height: auto;
   border: none;
   border-radius: 15px;
+  margin-bottom: 20px;
   -webkit-box-shadow: 0px 5px 5px grey;
           box-shadow: 0px 5px 5px grey;
 }
@@ -150,7 +151,26 @@ nav {
   border-radius: 10px 10px 0 0;
 }
 
+.bgmenu .new {
+  border: solid 1px #00ffbf;
+  background-color: #01c58a;
+  color: #00f3aa;
+  width: 65px;
+  padding: 1%;
+  -webkit-box-shadow: 0px 5px 5px grey;
+          box-shadow: 0px 5px 5px grey;
+}
+
+.bgmenu h3 {
+  margin-top: 0;
+}
+
 footer {
   background-color: #3d3c3c;
+  color: white;
+}
+
+footer h3 {
+  font-family: "Shrikhand", cursif;
 }
 /*# sourceMappingURL=style.css.map */

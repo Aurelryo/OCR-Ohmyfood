@@ -1,4 +1,9 @@
 footer {
   background-color: #3d3c3c;
+  color: white;
+}
+
+footer h3 {
+  font-family: "Shrikhand", cursif;
 }
 /*# sourceMappingURL=footer.css.map */

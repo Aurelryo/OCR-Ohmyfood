@@ -11,6 +11,7 @@ nav {
   height: auto;
   border: none;
   border-radius: 15px;
+  margin-bottom: 20px;
   -webkit-box-shadow: 0px 5px 5px grey;
           box-shadow: 0px 5px 5px grey;
 }
@@ -19,5 +20,19 @@ nav {
   width: 100%;
   height: 200px;
   border-radius: 10px 10px 0 0;
+}
+
+.bgmenu .new {
+  border: solid 1px #00ffbf;
+  background-color: #01c58a;
+  color: #00f3aa;
+  width: 65px;
+  padding: 1%;
+  -webkit-box-shadow: 0px 5px 5px grey;
+          box-shadow: 0px 5px 5px grey;
+}
+
+.bgmenu h3 {
+  margin-top: 0;
 }
 /*# sourceMappingURL=nav.css.map */
