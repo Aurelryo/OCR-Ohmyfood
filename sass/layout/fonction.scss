@@ -25,5 +25,17 @@
 }
 
 span{
-    border: 1px black;
+    border: none;
+    border-radius: 30px;
+    background-color: #9356dc;
+    width: 21px;
+    height: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    right: 40px;
+    top: 16px;
+    font-size: 12px;
 }

@@ -1,0 +1,15 @@
+nav{
+    background-color: #c4bebe;
+}
+
+.bgmenu{
+    width: auto;
+    height: auto;
+    border: solid 1px black;
+    border-radius: 15px;
+    & img{
+        width: 350px;
+        height: 200px;
+        border-radius: 10px 10px 0 0;
+    }
+}
