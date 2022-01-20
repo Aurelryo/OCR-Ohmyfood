@@ -5,10 +5,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-main {
-  padding: 0 1rem;
-}
-
 header {
   font-family: "Shrikhand", cursif;
   text-align: center;
@@ -106,6 +102,7 @@ header h1 {
 
 .fonction li i.fas {
   margin-right: 10px;
+  color: lightgrey;
 }
 
 span {
@@ -131,18 +128,24 @@ span {
 }
 
 nav {
-  background-color: #c4bebe;
+  background-color: #F6F6F6;
+}
+
+.menu_contener {
+  padding: 5%;
 }
 
 .bgmenu {
-  width: auto;
+  width: 100%;
   height: auto;
-  border: solid 1px black;
+  border: none;
   border-radius: 15px;
+  -webkit-box-shadow: 0px 5px 5px grey;
+          box-shadow: 0px 5px 5px grey;
 }
 
 .bgmenu img {
-  width: 350px;
+  width: 100%;
   height: 200px;
   border-radius: 10px 10px 0 0;
 }

@@ -1,14 +1,20 @@
+@import '../util/mixin.scss';
 nav{
-    background-color: #c4bebe;
+    background-color: #F6F6F6;
+}
+.menu_contener{
+    padding: 5%;
+    
 }
 
 .bgmenu{
-    width: auto;
+    width: 100%;
     height: auto;
-    border: solid 1px black;
+    border: none;
     border-radius: 15px;
+    @include shadow;
     & img{
-        width: 350px;
+        width: 100%;
         height: 200px;
         border-radius: 10px 10px 0 0;
     }
