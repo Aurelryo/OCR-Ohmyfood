@@ -8,13 +8,13 @@ nav {
   display: grid;
   -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
-  gap: 2rem;
 }
 
 @media (min-width: 768px) {
   .menu_contener {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
 }
 
@@ -55,5 +55,21 @@ nav {
 
 .title_card {
   padding: 0.5rem;
+  position: relative;
+}
+
+.title_card h3 {
+  margin: 0;
+}
+
+.title_card p {
+  margin: 0;
+}
+
+.title_card .far {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 15px;
+  top: 15px;
 }
 /*# sourceMappingURL=nav.css.map */

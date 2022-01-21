@@ -3,3 +3,12 @@
 @mixin scale {
     transform: scale(1.02);
 }
+@mixin pad0 {
+    padding: 1rem;
+    }
+
+@mixin flexbase {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}    

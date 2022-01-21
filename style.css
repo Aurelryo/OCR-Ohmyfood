@@ -67,11 +67,16 @@ header h1 {
   opacity: 0.8;
 }
 
+.fonction {
+  padding: 1rem;
+}
+
 .fonction ol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 1rem;
+  padding: 1rem;
 }
 
 @media (max-width: 992px) {
@@ -137,13 +142,13 @@ nav {
   display: grid;
   -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
-  gap: 2rem;
 }
 
 @media (min-width: 768px) {
   .menu_contener {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
 }
 
@@ -182,6 +187,26 @@ nav {
   margin-top: 0;
 }
 
+.title_card {
+  padding: 0.5rem;
+  position: relative;
+}
+
+.title_card h3 {
+  margin: 0;
+}
+
+.title_card p {
+  margin: 0;
+}
+
+.title_card .far {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
 footer {
   background-color: #3d3c3c;
   color: white;
@@ -191,5 +216,23 @@ footer h3 {
   font-family: "Shrikhand", cursif;
   margin-top: 0;
   padding-top: 0.7rem;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+.foot_contener {
+  padding: 1rem;
+}
+
+.foot_contener .foot_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */
