@@ -36,7 +36,7 @@
   color: lightgrey;
 }
 
-span {
+.list {
   border: none;
   border-radius: 30px;
   background-color: #9356dc;

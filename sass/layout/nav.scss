@@ -3,9 +3,14 @@ nav{
     background-color: #F6F6F6;
 }
 .menu_contener{
-    padding: 5%;
+    padding: 0 5%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    @media (min-width: 768px){
+    grid-template-columns: repeat(2, 1fr);}
+    }
     
-}
 
 .bgmenu{
     width: 100%;
@@ -14,21 +19,29 @@ nav{
     border-radius: 15px;
     margin-bottom: 20px;
     @include shadow;
+    position: relative;
     & img{
         width: 100%;
         height: 200px;
         border-radius: 10px 10px 0 0;
     }
-    & .new{
-        border: solid 1px rgb(0, 255, 191);
-        background-color: rgb(1, 197, 138);
+    .new{
+        border: solid 1px #99E2D0;
+        background-color: #99E2D0;
         color: rgb(0, 243, 170);
         width: 65px;
         padding: 1%;
         margin: 0;
+        position: absolute;
+        right: 10px;
+        top: 13px;
         @include shadow;
     }
     & h3{
         margin-top: 0;
     }
+}
+
+.title_card{
+    padding: 0.5rem;
 }
