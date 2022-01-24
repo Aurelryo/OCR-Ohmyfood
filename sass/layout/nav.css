@@ -96,6 +96,15 @@ a {
   font-family: "Shrikhand", cursif;
 }
 
+.titlecard2 {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .btnmenu {
   border: solid 1px black;
   border-radius: 1rem;
