@@ -77,17 +77,22 @@ a {
     border-radius: 50px 50px 0 0;
     & h2{
         font-family: "Shrikhand", cursif;
+        margin: 0;
     }
 }
 .titlecard2{
     align-items: baseline;
     display: flex;
+    justify-content: space-between;
+    & i{
+        margin-right: 15px;
+    }
 }
 .btnmenu{
-    border: solid 1px black;
     border-radius: 1rem;
     background-color: white;
     margin-bottom: 13px;
+    @include shadow;
     position: relative;
     & h3{
         margin: 0;
