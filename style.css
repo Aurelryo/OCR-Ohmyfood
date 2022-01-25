@@ -15,6 +15,11 @@ header {
 header h1 {
   margin: 0;
 }
+header i {
+  position: absolute;
+  left: 10px;
+  bottom: 17px;
+}
 
 .imgmenu {
   width: 100%;
@@ -53,6 +58,12 @@ header h1 {
 .explo button:hover {
   transform: scale(1.05);
   opacity: 0.8;
+}
+
+/*menuorder*/
+.btnorders {
+  display: flex;
+  justify-content: center;
 }
 
 .btnorder {
@@ -128,6 +139,11 @@ nav h2 {
   .menu_contener {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .menu_contener {
+    padding: 1rem;
   }
 }
 
