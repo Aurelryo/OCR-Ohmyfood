@@ -14,7 +14,7 @@ nav h2 {
       grid-template-columns: repeat(1, 1fr);
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .menu_contener {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
@@ -22,9 +22,9 @@ nav h2 {
   }
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   .menu_contener {
-    padding: 1rem;
+    padding: 1rem 20rem;
   }
 }
 
@@ -45,6 +45,12 @@ nav h2 {
   border-radius: 10px 10px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (min-width: 1200px) {
+  .bgmenu img {
+    height: 280px;
+  }
 }
 
 .bgmenu .new {

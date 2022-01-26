@@ -24,6 +24,7 @@
 .btnorders{
     display: flex;
     justify-content: center;
+
 }
 
 .btnorder{
@@ -36,4 +37,9 @@
     background-image: linear-gradient(#ff79da, #9356dc);
     margin-bottom: 10px;
     transition: all 200ms;
+    &:hover{
+        transform: scale(1.05);
+        opacity: 0.8;
     }
+}
+

@@ -52,4 +52,10 @@
   -webkit-transition: all 200ms;
   transition: all 200ms;
 }
+
+.btnorder:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  opacity: 0.8;
+}
 /*# sourceMappingURL=btnexplo.css.map */
