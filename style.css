@@ -23,6 +23,14 @@ header i {
 
 .imgmenu {
   width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  .imgmenu {
+    height: 350px;
+    object-fit: cover;
+  }
 }
 
 .location {
@@ -129,6 +137,14 @@ header i {
   font-size: 12px;
 }
 
+@keyframes checkrotate {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 nav {
   background-color: #F6F6F6;
 }
@@ -194,15 +210,32 @@ nav h2 {
 }
 .title_card h3 {
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .title_card p {
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.title_card .far {
+.title_card i {
   font-size: 1.5rem;
   position: absolute;
   right: 15px;
   top: 15px;
+}
+.title_card .fas {
+  color: transparent;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+.title_card .fas:hover {
+  opacity: 1;
+  transform-origin: 50% bottom;
+  transform: scale(1.1);
 }
 
 a {
@@ -238,6 +271,10 @@ a {
   margin-bottom: 13px;
   box-shadow: 0px 5px 5px grey;
   position: relative;
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .btnmenu h3 {
   margin: 0;
@@ -248,10 +285,38 @@ a {
   margin: 0;
   padding: 0.2rem 1rem;
 }
-.btnmenu span {
-  position: absolute;
-  right: 17px;
-  top: 35px;
+.btnmenu .price {
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;
+  font-weight: bold;
+  padding: 1rem;
+}
+.btnmenu .valid {
+  display: grid;
+  place-items: center;
+  background-color: #99E2D0;
+  height: 60px;
+  width: 59px;
+  margin-right: -3.9rem;
+  transition: all 1s;
+}
+.btnmenu i {
+  display: grid;
+  place-items: center;
+  background-color: white;
+  border-radius: 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+  color: #99E2D0;
+  transform: rotate(180deg);
+  transition-duration: 0.7s;
+}
+.btnmenu:hover .valid {
+  margin-right: 0;
+}
+.btnmenu:hover i {
+  transform: rotate(0);
 }
 
 footer {
