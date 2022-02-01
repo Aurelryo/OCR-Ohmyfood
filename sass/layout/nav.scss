@@ -39,6 +39,7 @@ nav{
     @include shadow;
     position: relative;
     
+    
     & img{
         width: 100%;
         height: 200px;
@@ -91,7 +92,7 @@ nav{
                 &:hover{
                     opacity: 1;
                     transform-origin: 50% bottom;
-                    transform: scale(1.1);
+                    transform: scale(1.2);
                 }
             }
 }
@@ -119,7 +120,14 @@ a {
         margin-right: 15px;
     }
 }
+
+
 .btnmenu{
+    @for $i from 1 through 4  {
+        &:nth-child(#{$i}){
+            animation-delay: 100ms* $i;
+        }
+    }
     border-radius: 1rem;
     background-color: white;
     margin-bottom: 13px;
@@ -129,6 +137,10 @@ a {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    animation: menu 0.5s;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
+    transform: scale(0);
         & h3{
             margin: 0;
             padding: 0.2rem 1rem;
@@ -162,15 +174,15 @@ a {
             height: 1.5rem;
             width: 1.5rem;
             color: $green;
-            transform: rotate(180deg);
-            transition-duration: 0.7s;
+            transform: rotate(0deg);
+            transition-duration: 1s;
         }
         &:hover{
             .valid{
             margin-right: 0;
             }
             & i{
-                transform: rotate(0);
+                transform: rotate(360deg);
             }
         }
 
