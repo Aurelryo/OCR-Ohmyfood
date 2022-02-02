@@ -101,6 +101,11 @@ a {
     color: black;
 }
 /*carte menu*/
+.menu_cat{
+    @media screen and (min-width: 1200px){
+    display: flex;
+    justify-content: space-around;}
+}
 .navmenu{
     background-color: #F6F6F6;
     @include pad0;
@@ -187,5 +192,3 @@ a {
         }
 
 }
-
-

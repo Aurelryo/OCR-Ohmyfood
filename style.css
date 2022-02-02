@@ -254,6 +254,13 @@ a {
 }
 
 /*carte menu*/
+@media screen and (min-width: 1200px) {
+  .menu_cat {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 .navmenu {
   background-color: #F6F6F6;
   padding: 1rem;
