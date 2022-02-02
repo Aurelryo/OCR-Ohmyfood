@@ -139,10 +139,12 @@ header i {
 
 @keyframes menu {
   0% {
-    transform: scale(0);
+    transform: translateY(-50%);
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 @keyframes checkrotate {
@@ -299,6 +301,12 @@ a {
 }
 .btnmenu:nth-child(4) {
   animation-delay: 400ms;
+}
+.btnmenu:nth-child(5) {
+  animation-delay: 500ms;
+}
+.btnmenu:nth-child(6) {
+  animation-delay: 600ms;
 }
 .btnmenu h3 {
   margin: 0;
