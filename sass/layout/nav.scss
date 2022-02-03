@@ -1,14 +1,7 @@
 @import '../util/mixin.scss';
 @import '../util/animation.scss';
 @import '../variables/variable.scss';
-@keyframes checkrotate {
-    0%{
-        transform: rotate(-270deg);
-    }
-    100%{
-        transform: rotate(0);
-    }
-}
+
 
 nav{
     background-color: #F6F6F6;
