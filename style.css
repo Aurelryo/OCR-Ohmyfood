@@ -17,9 +17,10 @@ body {
   animation: pageload 3s forwards;
 }
 .pageload::after {
-  content: "OMF";
+  content: "OhMyF00d";
   font-family: shrikhand;
-  color: linear-gradient(#ff79da, #9356dc);
+  font-size: 100px;
+  color: #9356dc;
   animation: spin 3s;
 }
 
