@@ -119,6 +119,11 @@ a {
     }
 }
 
+.titlecat{
+    border-bottom: 3px solid $green;
+    width: 40px;
+}
+
 
 .btnmenu{
     @for $i from 1 through 6  {
@@ -130,7 +135,7 @@ a {
     background-color: white;
     margin-bottom: 13px;
     @include shadow;
-    position: relative;
+    
     display: flex;
     overflow: hidden;
     white-space: nowrap;
@@ -160,7 +165,7 @@ a {
             place-items: center;
             background-color: $green;
             height: 60px;
-            width: 59px;
+            width: 3.9rem;
             margin-right: -3.9rem;
             transition: all 1s;
         }

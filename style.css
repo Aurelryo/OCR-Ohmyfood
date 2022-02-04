@@ -312,12 +312,16 @@ a {
   margin-right: 15px;
 }
 
+.titlecat {
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+}
+
 .btnmenu {
   border-radius: 1rem;
   background-color: white;
   margin-bottom: 13px;
   box-shadow: 0px 5px 5px grey;
-  position: relative;
   display: flex;
   overflow: hidden;
   white-space: nowrap;
@@ -366,7 +370,7 @@ a {
   place-items: center;
   background-color: #99E2D0;
   height: 60px;
-  width: 59px;
+  width: 3.9rem;
   margin-right: -3.9rem;
   transition: all 1s;
 }
