@@ -1,5 +1,6 @@
 @import '../util/mixin.scss';
 
+
 .fonction {
     @include pad0;
     & ol {
@@ -20,7 +21,10 @@
         align-items: center;
         @include shadow;
         &:hover{
-            @include scale;
+            background-color:#e7dcf3;
+            i.fas{
+                color: #9356dc;
+            }
         }
         & i.fas{
             margin-right: 10px;
