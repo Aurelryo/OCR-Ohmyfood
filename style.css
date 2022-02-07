@@ -5,43 +5,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.pageload {
-  position: fixed;
-  display: grid;
-  place-items: center;
-  background-color: white;
-  height: 100vh;
-  inset: 0;
-  z-index: 1;
-  opacity: 0.7;
-  animation: pageload 3s forwards;
-}
-.pageload::after {
-  content: "";
-  font-family: shrikhand;
-  font-size: 100px;
-  color: #9356dc;
-  width: 100px;
-  height: 100px;
-  border-right: 5px solid transparent;
-  border-top: 5px solid #9356dc;
-  border-radius: 50%;
-  animation: spin 3s infinite ease-in-out;
-}
-
-@keyframes pageload {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    visibility: hidden;
-  }
-}
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
 header {
   font-family: "Shrikhand", cursif;
   text-align: center;
@@ -101,7 +64,7 @@ header i {
   transition: all 200ms;
 }
 .explo button:hover {
-  transform: scale(1.05);
+  box-shadow: 0 0 0.9 rem rgba(0, 0, 0, 0.25);
   opacity: 0.8;
 }
 
@@ -123,8 +86,8 @@ header i {
   transition: all 200ms;
 }
 .btnorder:hover {
-  transform: scale(1.05);
   opacity: 0.8;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
 }
 
 .fonction {
@@ -239,9 +202,11 @@ nav h2 {
 }
 .bgmenu .new {
   background-color: #99E2D0;
-  color: #1b6150;
+  color: #278870;
   width: 65px;
-  padding: 1%;
+  padding: 0.3rem 0.7rem;
+  font-weight: bold;
+  font-size: 16px;
   margin: 0;
   position: absolute;
   right: 10px;
@@ -280,10 +245,11 @@ nav h2 {
   opacity: 0;
   transition: all 200ms ease-in-out;
 }
-.title_card .fas:hover {
+.title_card .fas:active {
   opacity: 1;
-  transform-origin: 50% bottom;
-  transform: scale(1.2);
+  transform-origin: 50% 100%;
+  transition-duration: 1s;
+  transform: scale(1, 1);
 }
 
 a {
@@ -291,7 +257,47 @@ a {
   color: black;
 }
 
-/*carte menu*/
+footer {
+  background-color: #3d3c3c;
+  color: white;
+}
+footer h3 {
+  font-family: "Shrikhand", cursif;
+  margin-top: 0;
+  padding-top: 0.7rem;
+}
+footer p {
+  margin: 10px 0;
+}
+footer .fa-hands-helping {
+  font-size: 13px;
+}
+
+.foot_contener {
+  padding: 1rem;
+}
+.foot_contener .foot_link {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+@keyframes menu {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes load {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
 @media screen and (min-width: 1200px) {
   .menu_cat {
     display: flex;
@@ -400,24 +406,42 @@ a {
   transform: rotate(360deg);
 }
 
-footer {
-  background-color: #3d3c3c;
-  color: white;
+.pageload {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  background-color: white;
+  height: 100vh;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.7;
+  animation: pageload 2s forwards;
 }
-footer h3 {
-  font-family: "Shrikhand", cursif;
-  margin-top: 0;
-  padding-top: 0.7rem;
+.pageload .loarderspin {
+  border-radius: 50%;
+  border: 5px solid black;
 }
-footer p {
-  margin: 10px 0;
+.pageload::after {
+  content: "";
+  color: #9356dc;
+  width: 100px;
+  height: 100px;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #9356dc;
+  border-radius: 50%;
+  animation: spin 2s infinite ease-in-out;
 }
 
-.foot_contener {
-  padding: 1rem;
+@keyframes pageload {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    visibility: hidden;
+  }
 }
-.foot_contener .foot_link {
-  display: flex;
-  align-items: baseline;
-  gap: 0.5rem;
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }

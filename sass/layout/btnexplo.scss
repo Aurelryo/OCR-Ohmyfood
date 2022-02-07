@@ -16,7 +16,7 @@
         transition: all 200ms;
     }
     & button:hover {
-        transform: scale(1.05);
+        box-shadow: 0 0 0.9 rem rgba(0, 0, 0, 0.25);
         opacity: 0.8;
     }
 }
@@ -38,8 +38,8 @@
     margin-bottom: 10px;
     transition: all 200ms;
     &:hover{
-        transform: scale(1.05);
         opacity: 0.8;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
     }
 }
 

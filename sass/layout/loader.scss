@@ -1,0 +1,39 @@
+.pageload{
+    position: fixed;
+    display: grid;
+    place-items: center;
+    background-color: white;
+    height: 100vh;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.7;
+    animation: pageload 2s forwards;
+    & .loarderspin{
+      border-radius: 50%;
+      border: 5px solid black;
+    }
+    &::after{
+      content: "";
+      color: #9356dc;
+      width: 100px;
+      height: 100px;
+      border-right: 5px solid transparent;
+      border-top: 5px solid  #9356dc;
+      border-radius: 50%;
+      animation: spin 2s  infinite ease-in-out;
+    }
+  }
+  @keyframes pageload {
+    0%{
+      transform: scale(1);
+    }
+    100%{
+      visibility: hidden;
+    }
+  }
+  
+  @keyframes spin {
+    to{
+      transform: rotate(360deg);
+    }
+}  

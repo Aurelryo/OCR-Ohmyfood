@@ -1,0 +1,99 @@
+@import '../util/mixin.scss';
+@import '../util/animation.scss';
+@import '../variables/variable.scss';
+.menu_cat{
+    @media screen and (min-width: 1200px){
+    display: flex;
+    justify-content: space-around;}
+}
+.navmenu{
+    background-color: #F6F6F6;
+    @include pad0;
+    position: relative;
+    margin-top: -59px;
+    border-radius: 50px 50px 0 0;
+    & h2{
+        font-family: "Shrikhand", cursif;
+        margin: 0;
+    }
+}
+.titlecard2{
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    & i{
+        margin-right: 15px;
+    }
+}
+
+.titlecat{
+    border-bottom: 3px solid $green;
+    width: 40px;
+}
+
+
+.btnmenu{
+    @for $i from 1 through 6  {
+        &:nth-child(#{$i}){
+            animation-delay: 100ms* $i;
+        }
+    }
+    border-radius: 1rem;
+    background-color: white;
+    margin-bottom: 13px;
+    @include shadow;
+    
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    animation: menu 0.5s;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
+    transform: scale(0);
+        & h3{
+            margin: 0;
+            padding: 0.2rem 1rem;
+            margin-bottom: 5px;
+        }
+        & p{
+            margin: 0;
+            padding: 0.2rem 1rem;
+        }
+        & .price{
+            display: flex;
+            align-items: flex-end;
+            margin-left: auto;
+            font-weight: bold;
+            padding: 1rem;
+        }
+        & .valid{
+            display: grid;
+            place-items: center;
+            background-color: $green;
+            height: 60px;
+            width: 3.9rem;
+            margin-right: -3.9rem;
+            transition: all 1s;
+        }
+        i{
+            display: grid;
+            place-items: center;
+            background-color: white;
+            border-radius: 50%;
+            height: 1.5rem;
+            width: 1.5rem;
+            color: $green;
+            transform: rotate(0deg);
+            transition-duration: 1s;
+        }
+        &:hover{
+            .valid{
+            margin-right: 0;
+            }
+            & i{
+                transform: rotate(360deg);
+            }
+        }
+
+}
