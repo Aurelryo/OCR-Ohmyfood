@@ -244,11 +244,12 @@ nav h2 {
   -webkit-background-clip: text;
   opacity: 0;
   transition: all 200ms ease-in-out;
+  transform: translate(50% 100%);
 }
 .title_card .fas:active {
   opacity: 1;
   transform-origin: 50% bottom;
-  transition-duration: 1s;
+  transition-duration: 2s;
   transform: translateY(5%) scale(1.2);
 }
 
@@ -364,14 +365,25 @@ footer .fa-hands-helping {
 .btnmenu:nth-child(6) {
   animation-delay: 600ms;
 }
+.btnmenu .menu_descrip {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .btnmenu h3 {
   margin: 0;
   padding: 0.2rem 1rem;
   margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .btnmenu p {
   margin: 0;
   padding: 0.2rem 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .btnmenu .price {
   display: flex;
