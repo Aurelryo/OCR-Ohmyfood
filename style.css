@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2? family= Raleway &famille= Roboto & display=swap");
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -9,7 +8,7 @@ header {
   font-family: "Shrikhand", cursif;
   text-align: center;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
-  padding: 0.3rem;
+  padding: 0.7rem;
   position: relative;
 }
 header h1 {
@@ -45,6 +44,9 @@ header i {
 .location h2 {
   padding: 0.5rem;
 }
+.location i {
+  font-size: 20px;
+}
 
 .explo {
   text-align: center;
@@ -52,6 +54,7 @@ header i {
 }
 .explo h2 {
   margin-top: 0;
+  padding-top: 30px;
 }
 .explo button {
   border-radius: 30px;
@@ -61,11 +64,12 @@ header i {
   padding: 1rem 2rem;
   font-size: 1rem;
   background-image: linear-gradient(#ff79da, #9356dc);
-  margin-bottom: 10px;
+  margin-bottom: 60px;
+  margin-top: 10px;
   transition: all 200ms;
 }
 .explo button:hover {
-  box-shadow: 0 0 0.9 rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 0.9rem rgba(0, 0, 0, 0.25);
   opacity: 0.8;
 }
 
@@ -80,10 +84,11 @@ header i {
   border: none;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
   color: white;
-  padding: 1rem 2rem;
+  padding: 1rem 3.5rem;
   font-size: 1rem;
   background-image: linear-gradient(#ff79da, #9356dc);
-  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   transition: all 200ms;
 }
 .btnorder:hover {
@@ -96,7 +101,7 @@ header i {
 }
 .fonction ol {
   display: flex;
-  gap: 1rem;
+  gap: 1.2rem;
   padding: 1rem;
 }
 @media (max-width: 992px) {
@@ -107,12 +112,15 @@ header i {
 .fonction li {
   background-color: #F6F6F6;
   list-style-type: none;
-  padding: 1rem 2rem;
+  padding: 0.7rem 2rem;
   flex-grow: 1;
   border-radius: 15px;
   display: flex;
   align-items: center;
-  box-shadow: 0px 5px 5px grey;
+  box-shadow: 0px 4px 10px #cfcece;
+}
+.fonction li p {
+  font-weight: bold;
 }
 .fonction li:hover {
   background-color: #e7dcf3;
@@ -121,8 +129,10 @@ header i {
   color: #9356dc;
 }
 .fonction li i.fas {
-  margin-right: 10px;
-  color: lightgrey;
+  font-size: 20px;
+  margin-right: 20px;
+  margin-left: -20px;
+  color: #858282;
 }
 
 .list {
@@ -159,6 +169,7 @@ header i {
 }
 nav {
   background-color: #F6F6F6;
+  padding-bottom: 40px;
 }
 nav h2 {
   padding: 1rem;
@@ -187,7 +198,7 @@ nav h2 {
   border: none;
   border-radius: 15px;
   margin-bottom: 20px;
-  box-shadow: 0px 5px 5px grey;
+  box-shadow: 0px 1px 5px #bbbbbb;
   position: relative;
 }
 .bgmenu img {
@@ -212,7 +223,7 @@ nav h2 {
   position: absolute;
   right: 10px;
   top: 13px;
-  box-shadow: 0px 5px 5px grey;
+  box-shadow: 0px 1px 5px #bbbbbb;
 }
 .bgmenu h3 {
   margin-top: 0;
@@ -244,14 +255,14 @@ nav h2 {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
-  transition: all 200ms ease-in-out;
+  transition: all 50ms ease-in-out;
   transform: translate(50% 100%);
 }
-.title_card .fas:active {
+.title_card .fas:hover {
   opacity: 1;
   transform-origin: 50% bottom;
-  transition-duration: 2s;
-  transform: translateY(5%) scale(1.2);
+  transition-duration: 0.5s;
+  transform: scale(1.2);
 }
 
 a {
@@ -310,6 +321,9 @@ footer .fa-hands-helping {
     display: flex;
     justify-content: space-around;
   }
+  .menu_cat .btnmenu {
+    width: 386px;
+  }
 }
 
 .navmenu {
@@ -321,7 +335,11 @@ footer .fa-hands-helping {
 }
 .navmenu h2 {
   font-family: "Shrikhand", cursif;
+  font-size: 30px;
   margin: 0;
+}
+.navmenu i {
+  font-size: 25px;
 }
 
 .titlecard2 {
@@ -335,6 +353,7 @@ footer .fa-hands-helping {
 
 .titlecat {
   border-bottom: 3px solid #99E2D0;
+  padding-bottom: 0.3rem;
   width: 40px;
 }
 
@@ -342,7 +361,7 @@ footer .fa-hands-helping {
   border-radius: 1rem;
   background-color: white;
   margin-bottom: 13px;
-  box-shadow: 0px 5px 5px grey;
+  box-shadow: 0px 1px 5px #bbbbbb;
   display: flex;
   overflow: hidden;
   white-space: nowrap;
@@ -371,13 +390,14 @@ footer .fa-hands-helping {
   animation-delay: 600ms;
 }
 .btnmenu .menu_descrip {
+  padding: 0.5rem 0rem 0.5rem 0.5rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 .btnmenu h3 {
   margin: 0;
-  padding: 0.2rem 1rem;
+  padding: 0.2rem 0;
   margin-bottom: 5px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -385,7 +405,7 @@ footer .fa-hands-helping {
 }
 .btnmenu p {
   margin: 0;
-  padding: 0.2rem 1rem;
+  padding: 0.2rem 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -395,13 +415,13 @@ footer .fa-hands-helping {
   align-items: flex-end;
   margin-left: auto;
   font-weight: bold;
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 0;
 }
 .btnmenu .valid {
   display: grid;
   place-items: center;
   background-color: #99E2D0;
-  height: 60px;
+  height: auto;
   width: 3.9rem;
   margin-right: -3.9rem;
   transition: all 1s;

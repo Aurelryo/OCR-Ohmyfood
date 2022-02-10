@@ -5,7 +5,7 @@
     @include pad0;
     & ol {
         display: flex;
-        gap: 1rem;
+        gap: 1.2rem;
         @include pad0;
         @media (max-width: 992px){
             flex-direction: column;
@@ -14,12 +14,15 @@
     & li {
         background-color: #F6F6F6;
         list-style-type: none;
-        padding: 1rem 2rem;
+        padding: 0.7rem 2rem;
         flex-grow: 1;
         border-radius: 15px;
         display: flex;
         align-items: center;
-        @include shadow;
+        @include shadowlight;
+        & p{
+            font-weight: bold;
+        }
         &:hover{
             background-color:#e7dcf3;
             i.fas{
@@ -27,8 +30,10 @@
             }
         }
         & i.fas{
-            margin-right: 10px;
-            color: lightgrey;
+            font-size: 20px;
+            margin-right: 20px;
+            margin-left: -20px;
+            color: rgb(133, 130, 130);
         }
     }
 }

@@ -1,4 +1,6 @@
-@mixin shadow {  box-shadow: 0px 5px 5px grey;
+@mixin shadow {  box-shadow: 0px 1px 5px rgb(187, 187, 187);
+}
+@mixin shadowlight {  box-shadow: 0px 4px 10px rgb(207, 206, 206);
 }
 @mixin scale {
     transform: scale(1.02);

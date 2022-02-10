@@ -5,6 +5,7 @@
 
 nav{
     background-color: #F6F6F6;
+    padding-bottom: 40px;
     & h2{
         @include pad0;
     }
@@ -83,16 +84,17 @@ nav{
                 background-clip: text;
                 -webkit-background-clip: text;
                 opacity: 0;
-                transition: all 200ms ease-in-out;
+                transition: all 50ms ease-in-out;
                 transform: translate(50% 100%);
-                &:active{
+                &:hover{
                     opacity: 1;
                     transform-origin: 50% bottom;
-                    transition-duration: 2s;
-                    transform: translateY(5%) scale(1.2);
+                    transition-duration: 0.5s;
+                    transform: scale(1.2);
                 }
             }
 }
+
 a {
     text-decoration: none;
     color: black;
