@@ -89,7 +89,6 @@ nav{
                 -webkit-background-clip: text;
                 opacity: 0;
                 transition: all 200ms ease-in-out;
-                transform: translate(50% 100%);
                 &:active{
                     opacity: 1;
                     transform-origin: 50% bottom;

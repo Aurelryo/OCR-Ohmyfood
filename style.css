@@ -269,7 +269,6 @@ nav h2 {
   -webkit-background-clip: text;
   opacity: 0;
   transition: all 200ms ease-in-out;
-  transform: translate(50% 100%);
 }
 .title_card .fas:active {
   opacity: 1;
