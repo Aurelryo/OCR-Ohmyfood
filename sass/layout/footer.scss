@@ -9,6 +9,7 @@ footer{
     }
     & p{
         margin: 10px 0;
+        margin-bottom: 5px;
     }
     & .fa-hands-helping{
         font-size: 13px;
@@ -17,7 +18,7 @@ footer{
     }
 }
 .foot_contener{
-    @include pad0;
+    padding: 1rem 1rem 2rem 1rem;
     & .foot_link{
         @include flexbase;
     }
