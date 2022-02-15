@@ -301,6 +301,7 @@ footer h3 {
 }
 footer p {
   margin: 10px 0;
+  margin-bottom: 5px;
 }
 footer .fa-hands-helping {
   font-size: 13px;
@@ -308,7 +309,7 @@ footer .fa-hands-helping {
 }
 
 .foot_contener {
-  padding: 1rem;
+  padding: 1rem 1rem 2rem 1rem;
 }
 .foot_contener .foot_link {
   display: flex;
