@@ -22,6 +22,7 @@
         @include shadowlight;
         & p{
             font-weight: bold;
+            margin-left: 15px;
         }
         &:hover{
             background-color:#e7dcf3;

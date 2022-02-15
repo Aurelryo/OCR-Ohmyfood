@@ -69,7 +69,7 @@ header i {
   transition: all 200ms;
 }
 .explo button:hover {
-  box-shadow: 0 10px 9rem rgba(0, 0, 0, 0.25);
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.25);
   opacity: 0.8;
 }
 
@@ -93,7 +93,7 @@ header i {
 }
 .btnorder:hover {
   opacity: 0.8;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.25);
 }
 
 .fonction {
@@ -121,6 +121,7 @@ header i {
 }
 .fonction li p {
   font-weight: bold;
+  margin-left: 15px;
 }
 .fonction li:hover {
   background-color: #e7dcf3;
