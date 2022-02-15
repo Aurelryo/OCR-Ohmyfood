@@ -2,13 +2,15 @@
 footer{
     background-color: rgb(61, 60, 60);
     color: white;
-    & h3{
+    & .footer_title{
         font-family: "Shrikhand", cursif;
         margin-top: 0;
-        padding-top: 0.7rem;
+        padding-top: 0;
+        font-size: 17px;
+        margin-bottom: 10px;
     }
     & p{
-        margin: 10px 0;
+        margin: 0;
         margin-bottom: 5px;
     }
     & .fa-hands-helping{
